@@ -1,8 +1,8 @@
 class Ship
-
-  def initialize(position, size)
+  def initialize(position, size, direction)
     @Position = position
     @Size = size
+    @Direction = direction
   end
 
   def position
@@ -13,4 +13,7 @@ class Ship
     @Size
   end
 
+  def direction
+    @Direction
+  end
 end

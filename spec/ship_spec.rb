@@ -1,16 +1,12 @@
 require 'ship'
+# frozen_string_literal: true
 
 describe Ship do
 
-  it 'initializes in a position' do
-    ship = Ship.new("A1", 3)
-    expect(ship.position).to eq "A1"
-  end
-
-  it 'initializes with a size of ship' do
-    ship = Ship.new("A1", 3)
+  it 'initializes in a position, with a size and a direction' do
+    ship = Ship.new('A1', 3, 'N')
+    expect(ship.position).to eq 'A1'
     expect(ship.size).to eq 3
+    expect(ship.direction).to eq 'N'
   end
-
-
 end

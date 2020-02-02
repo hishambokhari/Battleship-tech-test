@@ -106,7 +106,7 @@ RSpec.configure do |config|
   #   Kernel.srand config.seed
 end
 
-SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
+  SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
   SimpleCov::Formatter::Console
-])
-SimpleCov.start
+  ])
+  SimpleCov.start
