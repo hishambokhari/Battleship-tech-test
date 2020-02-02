@@ -1,9 +1,16 @@
 class Ship
 
-  attr_accessor :position
-  
-  def initialize(position)
-    @position = position
+  def initialize(position, size)
+    @Position = position
+    @Size = size
+  end
+
+  def position
+    @Position
+  end
+
+  def size
+    @Size
   end
 
 end
